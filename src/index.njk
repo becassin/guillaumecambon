@@ -1,18 +1,24 @@
 ---
-title: Home
+title: Bienvenue
 layout: layouts/base.njk
 eleventyNavigation:
-  key: Home
+  key: Accueil
   order: 0
 ---
 
 <div class="space-y-8">
-
-  <div>
-    <p>This is the project's home page. There is a little styling for demonstration purposes only.</p>
-    <p>The navigation might as well be a sidebar, or a floating menu. This template provides the structure, make it yours ✌️</p>
+  <div class="mx-auto max-w-md md:max-w-3xl">
+    <div class="md:flex">
+      <img
+        class="md:w-[50%] object-cover"
+        src="/img/me.jpg"
+        alt="Modern building architecture"
+      />
+      <div class="p-8 pt-0 pb-0">
+          <p>Bonjour, je suis Guillaume. Je suis un développeur web et musicien vivant actuellement à Lyon.</p>
+          <p> Cela fait plus de 16 ans que je construit des sites internet, avec un focus tout particulier sur les sites de contenus à fort traffic, pour des clients tels qu'Amnesty International, UNESCO, BMW, Biomérieux.</p>
+          <p>Je travaille actuellement en freelance. Mon champ d'action est vaste, mais je me spécialise notamment sur Drupal (certifié Acquia) et Wordpress, que cela soit sur la partie back, front ou devops.</p>
+      </div>
+    </div>
   </div>
-
-
-  <a href="https://github.com/tomreinert/minimal-11ty-tailwind-starter" class="inline-block uppercase rounded bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white text-sm">Download on github</a>
 </div>

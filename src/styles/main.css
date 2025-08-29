@@ -7,6 +7,10 @@ p {
 }
 
 main a {
-  color: blue;
+  color: #fc0cfc;
   text-decoration: underline;
+}
+
+.dark main a {
+  color: #fc0cfc;
 }

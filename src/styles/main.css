@@ -6,11 +6,16 @@ p {
   margin-bottom: 1em;
 }
 
-main a {
-  color: #fc0cfc;
-  text-decoration: underline;
+a,
+svg {
+  color: darkred;
 }
 
-.dark main a {
-  color: #fc0cfc;
+.dark a,
+.dark svg {
+  color: khaki;
+}
+
+main a {
+  text-decoration: underline;
 }

@@ -1,13 +1,34 @@
-<ul>
+<ul class="bookslist grid gap-6
+           grid-cols-2     <!-- 2 colonnes sur mobile -->
+           sm:grid-cols-3  <!-- 3 colonnes ≥640px -->
+           md:grid-cols-4  <!-- 4 colonnes ≥768px -->
+           lg:grid-cols-5  <!-- 5 colonnes ≥1024px -->
+           xl:grid-cols-5">
   {% for movie in movieslist %}
-    <li>
-      <strong>
-        <a href="{{ movie.url | url }}">{{ movie.data.title }}</a>
-      </strong>
-      -
-      <time datetime="{{ movie.date | htmlDateString }}">{{ movie.date | readableDate }}</time>
-      -
-      <span>{{ movie.data.description }}</span>
+    <li class="bookslist-item">
+      <article class="overflow-hidden transition">
+        <div class="flex flex-col h-full">
+
+          <!-- Cover -->
+          <div class="book-cover book-shadow">
+            <img loading="lazy" decoding="async"
+                  src="/img/movies/{{ movie.data.poster }}"
+                  alt="Cover art {{ movie.data.title }}"
+                  class="w-full aspect-[2/3] object-cover" />
+          </div>
+
+          <!-- Meta -->
+          <div class="p-3 flex flex-col flex-1">
+            <h2 class="text-base font-semibold text-sm">
+              {{ movie.data.title }}
+            </h2>
+            <div class="mt-1 text-xs">
+              Watched <time datetime="{{ movie.date | htmlDateString }}">{{ movie.date | readableDate }}</time>
+            </div>
+          </div>
+        </div>
+      </article>
     </li>
   {% endfor %}
 </ul>
+

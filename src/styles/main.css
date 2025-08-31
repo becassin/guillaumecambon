@@ -19,3 +19,7 @@ svg {
 main a {
   text-decoration: underline;
 }
+
+.bookslist a {
+  text-decoration: none;
+}

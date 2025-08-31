@@ -1,0 +1,13 @@
+<ul>
+  {% for movie in movieslist %}
+    <li>
+      <strong>
+        <a href="{{ movie.url | url }}">{{ movie.data.title }}</a>
+      </strong>
+      -
+      <time datetime="{{ movie.date | htmlDateString }}">{{ movie.date | readableDate }}</time>
+      -
+      <span>{{ movie.data.description }}</span>
+    </li>
+  {% endfor %}
+</ul>

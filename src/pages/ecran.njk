@@ -1,0 +1,10 @@
+---
+title: À l'écran
+layout: layouts/base.njk
+permalink: /ecran/
+eleventyNavigation:
+  key: À l'écran
+  order: 2
+---
+{% set movieslist = collections.movies %}
+{% include "components/movieslist.njk" %}

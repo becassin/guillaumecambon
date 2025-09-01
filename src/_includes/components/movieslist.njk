@@ -4,7 +4,7 @@
            md:grid-cols-4  <!-- 4 colonnes ≥768px -->
            lg:grid-cols-5  <!-- 5 colonnes ≥1024px -->
            xl:grid-cols-5">
-  {% for movie in movieslist %}
+  {% for movie in movieslist | reverse %}
     <li class="bookslist-item">
       <article class="overflow-hidden transition">
         <div class="flex flex-col h-full">
@@ -18,7 +18,7 @@
           </div>
 
           <!-- Meta -->
-          <div class="p-3 flex flex-col flex-1">
+          <div class="py-3 flex flex-col flex-1">
             <h2 class="text-base font-semibold text-sm">
               {{ movie.data.title }}
             </h2>

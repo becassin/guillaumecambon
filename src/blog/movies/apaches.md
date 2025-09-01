@@ -1,9 +1,9 @@
 ---
 layout: layouts/movie.njk
-title: Orange Mécanique
+title: Apaches
 description: The first post on the blog
-date: 2025-08-12
-year: 1972
-poster: clockwork_orange.jpg
+date: 2025-08-31
+year: 2023
+poster: apaches.jpg
 ---
 Très bon film

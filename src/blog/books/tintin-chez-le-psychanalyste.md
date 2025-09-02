@@ -1,6 +1,6 @@
 ---
 layout: layouts/book.njk
-title: Spinoza encule Hegel
+title: Tintin chez le Psychanalyste
 description: The first post on the blog
 date: 2025-02-11
 year: 1985

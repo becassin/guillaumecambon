@@ -1,0 +1,10 @@
+---
+title: À lire
+layout: layouts/base.njk
+permalink: /lecture/
+eleventyNavigation:
+  key: À lire
+  order: 2
+---
+{% set bookslist = collections.books %}
+{% include "components/bookslist.njk" %}
